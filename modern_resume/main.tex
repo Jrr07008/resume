@@ -1,0 +1,210 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[darkhipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{New Simple CV}
+\author{\LaTeX{} Ninja}
+\date{June 2019}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{Jeffrey}{Roberge}{Principal Mechanical Engineer}{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1
+%\backgroundcolor{g}[rgb]{0.8,1,1}  %\backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushleft
+\begin{center}
+    \roundpic{jeff2.jpg}
+\end{center}
+
+\bg{cvgreen}{white}{Objective}\\[0.5em]
+
+{\footnotesize
+Mechanical engineer with eight years of strong computational methods and software experience, looking to develop analytical
+ applications for the purpose of aiding in structural and aero-thermal design of gas turbine engines.}
+\bigskip
+
+
+\bg{cvgreen}{white}{Programming} \\[0.5em]
+
+Java ~•~ Python ~•~ C++ ~•~ Perl ~•~ Lua ~•~ MatLab ~•~ Bash
+
+\bigskip
+
+\bg{cvgreen}{white}{Mechanical Skills}\\[0.5em]
+
+FEA ~•~ ANSYS MAPDL ~•~ NX ~•~ NXOpen API ~•~ Simcenter Multiphysics ~•~ Abaqus ~•~ ISight ~•~ SmartUQ
+
+\bigskip
+
+\bg{cvgreen}{white}{Software Skills}\\[0.5em]
+
+Git ~•~ REST APIs ~•~ Agile Development and Scrum ~•~ Supercomputing ~•~ IBM LSF ~•~ LaTeX ~•~ Docker ~•~ AWS
+
+\bigskip
+
+\bg{cvgreen}{white}{Certifications}\\[0.5em]
+
+2024 AWS Cloud Practitioner
+
+\bigskip
+
+\bg{cvgreen}{white}{Interests}\\[0.5em]
+
+Computational Mechanics ~•~ Numerical Methods ~•~ Finite Element Analysis ~•~ Optimization
+
+\vspace{4em}
+
+%\infobubble{\faAt}{cvgreen}{white}{jeffrey.roberge@gmail.com}
+\infobubble{\faLinkedin}{cvgreen}{white}{jeffrey-roberge}
+%\infobubble{\faFacebook}{cvgreen}{white}{Jack Sparrow}
+\infobubble{\faGithub}{cvgreen}{white}{jrr07008}
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Professional Experience}
+
+\begin{tabular}{l| p{0.45\textwidth} c}
+    \cvevent{\footnotesize July 2024--Present}{Pratt \& Whitney}{Principal Mechanical Engineer}{System Engineering Tools \& Methods, East Hartford, CT \color{cvred}}{
+    \begin{itemize}
+    \item Designed and developed pre- and post-processing tools for finite element analysis (FEA), with a focus on low and high cycle fatigue lifing systems, fracture mechanics, creep, strength and burst preditions.
+    \item As mentor, developed new hire skills in Agile software, finite element analysis, and computational mechanics. 
+   \item Partnered with Human Resources and the leadership team to source top engineering talent for engineering.
+    \end{itemize}
+    }{PW_logo.jpg} \\
+    \cvevent{\footnotesize Dec 2020--July 2024}{Pratt \& Whitney}{Senior Mechanical Engineer}{System Engineering Tools \& Methods, East Hartford, CT \color{cvred}}{
+    \begin{itemize}
+   \item On a large multidisciplinary team, quantified powder nickel occlusion and fracture risk using a custom Monte Carlo simulation, and advised fleet management plans to mitigate this billion dollar flight safety issue.
+   \item Increased engineers' analysis speed by developing nearly 40 software applications for a new FEA toolset. 
+   \item Built training and up-skilled engineers, helping with technical issues in the new FEA solver environment.
+ \end{itemize}}{PW_logo.jpg}\\
+ 	\cvevent{\footnotesize Dec 2016--Dec2020}{Pratt \& Whitney}{Mechanical Engineer}{Engineering Development Program, East Hartford, CT \color{cvred}}{
+ 	\begin{itemize}
+ 	\item  Analyzed military high pressure compressor (HPC) static structures and cases during a preliminary design phase
+  \item  As part of the military HPC heat transfer group, iterated with the Design and Structures group to provide an HPC configuration that satisfies material capability and blade tip clearance requirements.
+  \item Studied secondary flow structure by carrying out computational fluid dynamic analyses of the HPC's scavenge paths.
+  %\item Post-processed vibratory and thermal couple data from engine test to validate current modeling assumptions and limits.
+  \item Performed part shape optimization via surrogate modeling.
+ \end{itemize}
+ }{PW_logo.jpg} \\
+	\cvevent{\footnotesize Sep 2014--Sep 2016}{Structural Optimization Laboratory}{Graduate Assistant / Teaching Assistant}{UConn Mechanical Engineering Department, Storrs, CT \color{cvred}}{
+	\begin{itemize}
+	\item Developed computational modeling algorithms for obtaining the effective properties of bone scaffold implants and composites, and for designing patient-specific bone scaffolds to expedite rehabilitation of critical size bone defects.
+	\end{itemize}
+	}{uconn.jpg}
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.35\textwidth}
+\section*{Degrees}
+\begin{tabular}{r p{0.6\textwidth} c}
+    \cvdegree{2016}{Mechanical Engineering}{M.S.}{UConn}{4.17/4.00}{uconn.jpg} \\
+    \cvdegree{2013}{Biomedical Engineering}{B.S.}{UConn}{3.76/4.00}{uconn.jpg}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Publications}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
+    2018 & Jeff Roberge and Juli\'{a}n Norato, "Computational design of curvilinear bone scaffolds fabricated via direct ink writing," \emph{Computer-Aided Design}, Vol. 95, February 2018, Pages 1-13. \\
+\end{tabular}
+\bigskip
+\end{minipage}
+%\begin{minipage}[t]{0.3\textwidth}
+%\section*{Programming}
+%\begin{tabular}{r @{\hspace{0.5em}}l}
+%     \bg{skilllabelcolour}{iconcolour}{java, python} &  \barrule{0.55}{0.5em}{cvgreen}\\
+%     \bg{skilllabelcolour}{iconcolour}{C++} & \barrule{0.4}{0.5em}{cvpurple} \\
+%     \bg{skilllabelcolour}{iconcolour}{Perl} & \barrule{0.3}{0.5em}{cvpurple} \\
+%     \bg{skilllabelcolour}{iconcolour}{Lua} & \barrule{0.35}{0.5em}{cvpurple} \\
+%     \bg{skilllabelcolour}{iconcolour}{MatLab} & \barrule{0.4}{0.5em}{cvpurple} \\
+%     \bg{skilllabelcolour}{iconcolour}{Bash} & \barrule{0.2}{0.5em}{cvorange} \\
+%\end{tabular}
+%\end{minipage}
+
+%\begin{minipage}[t]{0.35\textwidth}
+%\section*{Languages}
+%\begin{tabular}{l | ll}
+%\textbf{English} &  & {\phantom{x}\footnotesize native} \\
+%\textbf{Spanish} & A2 & \pictofraction{\faCircle}{cvgreen}{2}{black!30}{2}{\tiny} \\
+%\textbf{French} & A1 & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny} \\
+%\end{tabular}
+%\bigskip
+%\end{minipage}\hfill
+%\begin{minipage}[t]{0.3\textwidth}
+%\section*{Publications}
+%\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
+%    2018 & Jeff Roberge and Juli\'{a}n Norato, "Computational design of curvilinear bone scaffolds fabricated via direct ink writing," \emph{Computer-Aided Design}, Vol. 95, February 2018, Pages 1-13. \\
+%\end{tabular}
+%\bigskip
+%\end{minipage}
+
+
+
+
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+%\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small \icon{\faEnvelopeO}{cvgreen}{} jeffrey.roberge@gmail.com \icon{\faMapMarker}{cvgreen}{} Severna Park, MD \icon{\faPhone}{cvgreen}{} (860) 754-6785
+}
+\end{center}
+%\end{minipage}
+
+\end{paracol}
+
+\end{document}
